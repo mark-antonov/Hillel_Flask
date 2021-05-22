@@ -15,10 +15,10 @@ def hello_mark():
 @app.route("/requirements/")
 def requirements():
     with open("requirements.txt", "r") as file_requirements:
-        users = ""
+        text = ""
         for line in file_requirements:
-            users += f"{line}<br>"
-        return users
+            text += f"{line}<br>"
+        return text
 
 
 # Task 2
