@@ -18,7 +18,7 @@ def requirements():
         text = ""
         for line in file_requirements:
             text += f"{line}<br>"
-        return text
+    return text
 
 
 # Task 2
