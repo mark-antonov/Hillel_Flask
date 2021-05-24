@@ -14,8 +14,8 @@ def hello_mark():
 # Task 1
 @app.route("/requirements/")
 def requirements():
+    text = ""
     with open("requirements.txt", "r") as file_requirements:
-        text = ""
         for line in file_requirements:
             text += f"{line}<br>"
     return text
